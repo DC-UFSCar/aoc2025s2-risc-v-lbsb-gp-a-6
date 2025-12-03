@@ -83,7 +83,7 @@ module riscvmulti (
         end
     end
 
-    assign WriteData = alignedWriteData;
+     assign WriteData = alignedWriteData;
     assign WriteMask = (state == STORE) ? decodedWriteMask : 4'b0000;
 
     logic [31:0] memDataProcessed;
